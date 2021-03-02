@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/list_transaction_date"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="60"
+            android:text="Date"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/list_transaction_category"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="60"
+            android:text="Category"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/list_transaction_quantity"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="60"
+            android:text="Quantity"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </TableRow>
+
+</TableLayout>

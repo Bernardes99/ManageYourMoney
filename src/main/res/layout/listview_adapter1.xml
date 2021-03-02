@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/list_name_card"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="60"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/list_balance"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Card Balance"/>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/list_balance_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="TextView"
+            android:layout_below="@+id/list_balance"/>
+    </LinearLayout>
+</LinearLayout>
